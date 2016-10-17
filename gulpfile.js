@@ -1,7 +1,7 @@
 "use strict";
+require('babel-core/register');
 
-var path = require('path'),
-    gulp = require('gulp'),
+var gulp = require('gulp'),
     mocha = require('gulp-mocha'),
     watch = require('gulp-watch');
 
@@ -22,7 +22,7 @@ var config = {
 
 gulp.task('test', ['watch'], function () {
     process.env.PORT = 8000;
-    return gulp.src(['test/**/*.js'], {read: false})
+    return gulp.src(['test/**/*-spec.js'], {read: false})
         .pipe(mocha({
             reporter: config.test.mocha.reporter,
             ui: 'bdd'
@@ -31,7 +31,7 @@ gulp.task('test', ['watch'], function () {
 
 
 gulp.task('watch', function() {
-    gulp.watch('src/**/*.js', ['test']);
+    gulp.watch('src/**/*-spec.js', ['test']);
 });
 
 

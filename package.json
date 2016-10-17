@@ -16,13 +16,13 @@
   "author": "Dave Schinkel",
   "license": "",
   "homepage": "https://github.com/dschinkel/we-do-tdd#readme",
-  "dependencies": {
+  "devDependencies": {
+    "babel-preset-es2015": "^6.16.0",
+    "babel-register": "^6.16.3",
     "chai": "^3.5.0",
     "gulp": "^3.9.1",
-    "gulp-cli": "^1.2.1",
+    "gulp-cli": "^1.2.2",
     "gulp-mocha": "^2.2.0",
-    "gulp-shell": "^0.5.2",
-    "gulp-watch": "^4.3.5",
-    "mocha": "^2.4.5"
+    "gulp-watch": "^4.3.5"
   }
 }
