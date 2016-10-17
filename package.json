@@ -1,0 +1,28 @@
+{
+  "name": "test-driven-by-example",
+  "version": "0.0.0",
+  "description": "Performing Kent's book example",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "engines": {
+    "node": "6.4.0",
+    "npm": "3.10.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dschinkel/test-driven-by-example-excercise.git"
+  },
+  "author": "Dave Schinkel",
+  "license": "",
+  "homepage": "https://github.com/dschinkel/we-do-tdd#readme",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^1.2.1",
+    "gulp-mocha": "^2.2.0",
+    "gulp-shell": "^0.5.2",
+    "gulp-watch": "^4.3.5",
+    "mocha": "^2.4.5"
+  }
+}
